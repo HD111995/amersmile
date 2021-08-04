@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    padding-top:10vh;
+    text-align:center;
+    background-color: gray;
+    min-height:100vh;
+}
+body>div{
+    width:500px;
+    height:500px;
+    background-color: yellow;
+    position:relative;
+    margin-left:20vw;
+    animation-name:amer;
+    animation-duration:0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes amer {
+    20%{
+        transform:translatex(2vw);
+        background-color: red;
+    }
+    
+}
+div{
+    border-radius:50%;
+}
+.box1,.box2,.box3{
+    width:100px;
+    height:100px;
+    background-color:black;
+    position:absolute;
+}
+.box1{
+top:12vh;
+left:8vw;
+animation-name:hisham;
+animation-duration:3s;
+animation-timing-function:ease-in-out;
+animation-iteration-count: infinite;
+}
+.box2{
+    top:12vh;
+    right:8vw;
+    animation-name:hisham;
+animation-duration:3s;
+animation-timing-function:ease-in-out;
+animation-iteration-count: infinite;
+}
+.box3{
+    width:200px;
+    bottom:5vh;
+    left:10vw;
+  
+}
+.tooth1,.tooth2{
+    background-color: white;
+    width:50px;
+    height:90px;
+    position:absolute;
+    border-radius:10%;
+    text-align:center;
+}
+
+.tooth1{
+    
+    bottom:0.5vh;
+    left:3vw;
+    animation-name:vinus;
+    animation-duration:3s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+}
+.tooth2{
+    bottom:0.5vh;
+    right:3vw;
+    animation-name:vinus;
+    animation-duration:3s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+}
+hr{
+
+    margin-top:43px;
+    
+}
+@keyframes hisham {
+    20%{
+        box-shadow:20px 20px 20px 20px gray;
+    }
+}
+@keyframes vinus{
+    20%{
+        background-color: rgb(255, 212, 212);
+    }
+    30%{
+        background-color: rgb(255, 167, 167);
+    }
+    50%{
+        background-color: rgb(255, 123, 123);
+    }
+    70%{
+        background-color: rgb(250, 80, 80);
+    }
+    80%{
+        background-color: rgb(219, 20, 20);
+    }
+}
